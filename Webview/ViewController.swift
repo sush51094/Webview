@@ -7,14 +7,62 @@
 //
 
 import UIKit
+import WebKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,WKNavigationDelegate {
 
+    @IBOutlet weak var webkit: WKWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        webkit.navigationDelegate = self
+        webkit.allowsBackForwardNavigationGestures = true
+        
+    loadFromFile()
+        loadFromString()
+       // loadUrl()
     }
+    
+  func loadFromString()
+    
+  {
+    
+    let htmlStr = "<h1>Hello World</h1>"
+    webkit.loadHTMLString(htmlStr , baseURL: nil)
+    
+    
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    func loadFromFile()
+    {
+        
+        
+        let localfilePath = Bundle.main.url(forResource : "home", withExtension  : "html")
+        let myRequest = URLRequest(url : localfilePath!)
+        
+        webkit.load(myRequest)
+        
+    }
+        
+        
+    
 
-
+func loadUrl()
+{
+    
+    
+    let url = URL(string: "https://www.google.com")
+    let urlReq =  URLRequest(url: url!)
+    webkit.load(urlReq)
+    
+    
 }
-
+}

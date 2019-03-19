@@ -14,6 +14,7 @@
 		9BEF1E772240768400A4145D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BEF1E752240768400A4145D /* LaunchScreen.storyboard */; };
 		9BEF1E822240768400A4145D /* WebviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEF1E812240768400A4145D /* WebviewTests.swift */; };
 		9BEF1E8D2240768400A4145D /* WebviewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEF1E8C2240768400A4145D /* WebviewUITests.swift */; };
+		9BEF1E9B2240792300A4145D /* home.html in Resources */ = {isa = PBXBuildFile; fileRef = 9BEF1E9A2240792300A4145D /* home.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		9BEF1E882240768400A4145D /* WebviewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebviewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BEF1E8C2240768400A4145D /* WebviewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebviewUITests.swift; sourceTree = "<group>"; };
 		9BEF1E8E2240768400A4145D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BEF1E9A2240792300A4145D /* home.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = home.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				9BEF1E732240768400A4145D /* Assets.xcassets */,
 				9BEF1E752240768400A4145D /* LaunchScreen.storyboard */,
 				9BEF1E782240768400A4145D /* Info.plist */,
+				9BEF1E9A2240792300A4145D /* home.html */,
 			);
 			path = Webview;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BEF1E772240768400A4145D /* LaunchScreen.storyboard in Resources */,
+				9BEF1E9B2240792300A4145D /* home.html in Resources */,
 				9BEF1E742240768400A4145D /* Assets.xcassets in Resources */,
 				9BEF1E722240768300A4145D /* Main.storyboard in Resources */,
 			);
